@@ -18,4 +18,9 @@ class Alumno {
       throw new Error("La puntuación debe estar entre o y 10.");
     }
   }
+
+  // Método GET para obtener el estado dde aprobación
+  get apto() {
+    return this.#puntos >= 5 ? "Apto" : "No apto";
+  }
 }

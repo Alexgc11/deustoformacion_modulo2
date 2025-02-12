@@ -19,8 +19,14 @@ class Alumno {
     }
   }
 
-  // Método GET para obtener el estado dde aprobación
+  // Método GET para obtener el estado de aprobación
   get apto() {
     return this.#puntos >= 5 ? "Apto" : "No apto";
+  }
+
+  getInfo() {
+    return `Alumno: ${this.#nombre} ${this.#apellidos} - Resultado: ${
+      this.apto
+    }`;
   }
 }

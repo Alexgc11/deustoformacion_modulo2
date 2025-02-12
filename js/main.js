@@ -59,14 +59,14 @@ function evaluarAlumno() {
       }
     }, 2000);
   });
+}
 
-  // Función principal que usa async/await y maneja errores
-  async function showUserResult() {
-    try {
-      const resultado = await evaluarAlumno();
-      console.log(resultado);
-    } catch (error) {
-      console.error("Error: ", error);
-    }
+// Función principal que usa async/await y maneja errores
+async function showUserResult() {
+  try {
+    const resultado = await evaluarAlumno();
+    console.log(resultado);
+  } catch (error) {
+    console.error("Error: ", error);
   }
 }
